@@ -1,0 +1,59 @@
+.page ->whole page, everything is nested in this block
+
+
+.header ->block
+  .logo .logo_place_header
+  .header__title ->Learning how to code
+  .header__subtitle ->p tag - The most effective...
+    .header__link ->Learn more
+  .header__main-illustration
+  .header__square-pic
+
+
+.description ->block
+  .two-columns ->block
+    .two-columns__brief ->header "The main problen..."
+    .two-columns__main-text ->second column
+      .two-columns__paragraph_1
+      .two-columns__paragraph_2
+        .two-columns__span-accent ->use span tag for bold text
+      .two-columns__paragraph_3
+
+
+.digits ->block
+  .section-title ->block, Facts and figures
+  .section-subtitle ->block, On learning...
+  .table ->block
+    .table__cell ->card, use article tag?
+      .table__heading
+      .table__text
+
+
+.feynman ->block
+  .feynman__title
+  .feynman__subtitle
+  .feynman__link
+
+
+.kaufman ->block
+  .section-title_theme_dark
+  .section-subtitle_theme_dark
+  .table_theme_dark
+    .table__cell_theme_dark
+      .table__heading_theme_dark
+      .table__text_theme_dark
+  .kaufman__triangle
+
+
+
+.footer ->block
+  .footer__columns
+    .footer__columns_content_copyright ->first column
+      .logo .logo_place_footer ->use background-size: contain for this modifier
+      .footer__author
+    .footer__columns_content_info ->second column
+      .footer__column-table__heading
+      .footer__column-links
+    .footer__column_content_social ->third column
+      .footer__social-icon ->image
+      .footer__column-links
