@@ -9,9 +9,7 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.logo {
-  z-index: 1;
-}
+.logo {}
 
 
 /* header styles */
@@ -27,14 +25,16 @@
 .logo_place_header{
   height: 31px;
   width: 154px;
-  margin: 30px 0 0 64px;
+  margin-top: 30px;
+  margin-left: 64px;
   background-image: url(../images/logo.png);
   background-size: cover;
   position: absolute;
+  z-index: 1;
   }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
@@ -46,9 +46,9 @@
 .header__subtitle {
   width: 388px;
   position: absolute;
-  bottom: 0px; 
+  bottom: 30px; 
+  left: 64px;
   z-index: 3;
-  margin: 0 0 30px 64px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -61,10 +61,11 @@
 }
 
 .header__main-illustration {
+  object-fit: cover;
   position: absolute;
   width: 765px;
   height: 608px;
-  right: 64px;
+  right: 0px;
   bottom: 0;
   z-index: 2;
 }
@@ -86,14 +87,13 @@
 /* desctiption section styles */
 .description {
   display: flex;
-  padding: 100px 0;
+  margin: 100px 0;
   justify-content: center;
 }
 
 .two-columns {
   width: 80%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -123,19 +123,16 @@
 }
 
 .two-columns__span-accent {
-  line-height: 34px;
-  font-size: 24px;
   font-weight: bold;
 }
 
 
 /* digits section styles */
 .digits {
-  margin-top: -100px; /* this was for the overlap in the brief - not sure why that's there? */
-  padding: 100px 0;
+  margin: 100px 0; 
 }
 
-.digits__section-title {
+.section-title {
   width: 60%;
   margin-bottom: 20px;
   line-height: 69px;
@@ -145,7 +142,7 @@
   text-align: center;
 }
 
-.digits__section-subtitle {
+.section-subtitle {
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -188,7 +185,7 @@
 
 /* feynman section styles */
 .feynman {
-  height: 790px;
+  min-height: 790px;
   padding-top: 100px;
   position: relative;
   background-color: #f2f2f2;
@@ -201,6 +198,7 @@
   text-align: center;
   margin: 0 auto 70px;;
   position: relative;
+  max-width: 775px;
 }
 
 .feynman__subtitle {
@@ -238,6 +236,7 @@
   padding: 90px 0;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 .section-title_theme_dark {
@@ -248,8 +247,6 @@
   text-align: center;
   width: 60%;
   margin: 0 auto 20px;
-  position: relative;
-  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
@@ -260,8 +257,6 @@
   text-align: center;
   width: 60%;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
 }
 
 .table_theme_dark {
@@ -271,9 +266,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  position: relative;
   list-style-type: none;
-  z-index: 1;
   padding: 0;
 }
 
@@ -305,8 +298,8 @@
   position: absolute;
   right: -210px;
   top: 0;
-  z-index: 0;
- /* height: 1006px;*/
+  z-index: -1;
+  height: 800px;
   width: 995px;
 }
 
@@ -330,6 +323,8 @@
   justify-content: space-between;
 }
 
+.footer__column {}
+
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
@@ -347,11 +342,12 @@
 
 .footer__author {
   margin: 18px 0;
+  line-height: 25px;
+  font-size: 18;
+  font-weight: normal;
 }
 
-.footer__column_content_info {
-
-}
+.footer__column_content_info {}
 
 .footer__column-heading {
   margin: 0 0 20px;
@@ -369,7 +365,7 @@
   font-weight: normal;
 }
 
-.footer__column-links_no-style {
+.footer__column-link {
   color: #fff;
   text-decoration: none;
 }
@@ -381,4 +377,5 @@
 .footer__social-icon{
   width: 16px;
   height: 16px;
+  margin-right: 10px;
 }
