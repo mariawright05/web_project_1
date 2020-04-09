@@ -9,6 +9,7 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*What do I do with these empty classes? My editor says this is an error to leave them empty. If I take them off here, do I take them out of the HTML also?*/
 .logo {}
 
 
@@ -25,8 +26,8 @@
 .logo_place_header{
   height: 31px;
   width: 154px;
-  margin-top: 30px;
-  margin-left: 64px;
+  top: 30px;
+  left: 64px;
   background-image: url(../images/logo.png);
   background-size: cover;
   position: absolute;
@@ -44,7 +45,7 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   bottom: 30px; 
   left: 64px;
@@ -99,7 +100,7 @@
 
 .two-columns__brief {
   margin: 0;
-  width: 175px;
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -237,7 +238,22 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
+  /* Is this what you meant by making it a background image of the kaufman section? Or should I have kept the class .kauffman__triangle and added it as a div in HTML (like I did the square)? */
+  background-image: url(../images/triangle.svg);
+  background-repeat: no-repeat;
+  background-position: right -210px top;
+  background-size: 877px 877px;
 }
+
+/*.kaufman__triangle {
+  background-image: url(../images/triangle.svg);
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: -1;
+  height: 877px;
+  width: 877px;
+}*/
 
 .section-title_theme_dark {
   line-height: 69px;
@@ -294,15 +310,6 @@
   padding-top: 20px;
 }
 
-.kaufman__triangle {
-  position: absolute;
-  right: -210px;
-  top: 0;
-  z-index: -1;
-  height: 800px;
-  width: 995px;
-}
-
 
 /* footer section styles */
 .footer {
@@ -319,7 +326,6 @@
   width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
