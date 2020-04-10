@@ -327,8 +327,6 @@
   justify-content: space-between;
 }
 
-.footer__column {}
-
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
@@ -351,8 +349,6 @@
   font-weight: normal;
 }
 
-.footer__column_content_info {}
-
 .footer__column-heading {
   margin: 0 0 20px;
   line-height: 45px;
@@ -372,10 +368,6 @@
 .footer__column-link {
   color: #fff;
   text-decoration: none;
-}
-
-.footer__column_content_social {
-
 }
 
 .footer__social-icon{
