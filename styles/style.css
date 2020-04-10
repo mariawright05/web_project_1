@@ -9,8 +9,9 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*What do I do with these empty classes? My editor says this is an error to leave them empty. If I take them off here, do I take them out of the HTML also?*/
-.logo {}
+.logo {
+  background-repeat: no-repeat;
+}
 
 
 /* header styles */
@@ -238,14 +239,9 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
-  /* Is this what you meant by making it a background image of the kaufman section? Or should I have kept the class .kauffman__triangle and added it as a div in HTML (like I did the square)? */
-  background-image: url(../images/triangle.svg);
-  background-repeat: no-repeat;
-  background-position: right -210px top;
-  background-size: 877px 877px;
 }
 
-/*.kaufman__triangle {
+.kaufman__triangle {
   background-image: url(../images/triangle.svg);
   position: absolute;
   right: -210px;
@@ -253,7 +249,9 @@
   z-index: -1;
   height: 877px;
   width: 877px;
-}*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .section-title_theme_dark {
   line-height: 69px;
